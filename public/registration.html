@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration</title>
+    <link rel="stylesheet" href="css/StyleReg.css">
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <center>
+                <h1> Registeration Form</h1>
+            </center>
+            <hr>
+            <label> Name </label>
+            <input type="text" name="firstname" id="Uname" placeholder="Firstname" min="5" max="255" required />
+            <div>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="Email" max="255" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="Pass" min="6" max="12" required>
+
+                <label for="psw-repeat"><b>Re-type Password</b></label>
+                <input type="password" placeholder="Retype Password" name="psw-repeat" min="6" max="12" required>
+               
+                <button type="submit" class="registerbtn">Register</button>
+            </div> 
+        </div>
+    </form>
+    <script src="registration.js"></script>
+</body>
+
+</html>
