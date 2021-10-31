@@ -19,7 +19,7 @@ form.addEventListener('submit', e => {
     })
     .then(res => res.json())
     .then(response => {
-        console.log(response);
+        //console.log(response);
         if(response.error) {
             alert(response.error);
         }

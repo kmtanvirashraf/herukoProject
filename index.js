@@ -3,6 +3,7 @@ const app =express();
 const mongoose = require('mongoose');
 const dotenv=require('dotenv');
 const pages=require('./routes/pages');
+const port = process.env.PORT || 3000;
 dotenv.config();
 
 mongoose.connect(process.env.DB_CONNECT,{useUnifiedTopology:true,useNewUrlParser:true},()=>{
@@ -17,6 +18,6 @@ app.use('/api/user',authRoute);
 app.use('/api/secure',secureRoute);
 app.use('/',pages);
 
-app.listen(3000,()=>{
-    console.log('Server running');
+ app.listen(port,()=>{
+     console.log('Server running');
 });
